@@ -61,6 +61,21 @@ def on_shutdown():
 # ==========================================
 # 6.13 System Endpoints
 # ==========================================
+@app.get("/")
+def root():
+    return {
+        "name": settings.PROJECT_NAME,
+        "version": settings.VERSION,
+        "status": "online",
+        "docs_url": "/docs",
+        "health_url": "/health",
+        "endpoints": {
+            "chargers": "/api/v1/chargers/nearby",
+            "recommendations": "/api/v1/recommendations",
+            "auth": "/api/v1/auth"
+        }
+    }
+
 @app.get("/health")
 def health():
     return {"status": "ok", "time": datetime.utcnow().isoformat()}
