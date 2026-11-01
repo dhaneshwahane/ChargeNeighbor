@@ -1,0 +1,77 @@
+import { Charger } from '../types';
+
+// Verified Demo Fixtures located in Nagpur, Maharashtra (Section 3 requirement)
+export const NAGPUR_DEMO_CHARGERS: Charger[] = [
+  {
+    id: "nagpur_001",
+    name: "Civil Lines Green Home Charger",
+    latitude: 21.1524,
+    longitude: 79.0721,
+    connector_type: "Type 2",
+    power_kw: 7.4,
+    price_per_kwh: 14.0,
+    currency: "INR",
+    availability_status: "available",
+    host_rating: 4.9,
+    rating_count: 18,
+    distance_km: 1.2,
+    area_description: "Civil Lines, near High Court, Nagpur",
+    amenities: ["Covered Parking", "CCTV", "Restroom Access", "Wi-Fi"],
+    access_instructions: "Drive into Gate 4, spot marked EV-1. Pin: 1044.",
+    verification_level: 3
+  },
+  {
+    id: "nagpur_002",
+    name: "Dharampeth Fast AC Station",
+    latitude: 21.1396,
+    longitude: 79.0622,
+    connector_type: "CCS2",
+    power_kw: 11.0,
+    price_per_kwh: 16.5,
+    currency: "INR",
+    availability_status: "available",
+    host_rating: 4.8,
+    rating_count: 24,
+    distance_km: 2.5,
+    area_description: "West High Court Road, Dharampeth, Nagpur",
+    amenities: ["24/7 Security", "Shaded Area", "Coffee nearby"],
+    access_instructions: "Driveway beside Nilgiri Apt. Charger switch on column.",
+    verification_level: 4
+  },
+  {
+    id: "nagpur_003",
+    name: "Ramdaspeth Solar Powered Point",
+    latitude: 21.1340,
+    longitude: 79.0772,
+    connector_type: "Type 2",
+    power_kw: 7.2,
+    price_per_kwh: 12.5,
+    currency: "INR",
+    availability_status: "available",
+    host_rating: 5.0,
+    rating_count: 12,
+    distance_km: 1.8,
+    area_description: "Ramdaspeth, Central Bazaar Road, Nagpur",
+    amenities: ["Solar Clean Energy", "CCTV Surveillance"],
+    access_instructions: "Call host Ravi upon arrival. Gate automated.",
+    verification_level: 3
+  },
+  {
+    id: "nagpur_004",
+    name: "Wardha Road Rapid Hub",
+    latitude: 21.1042,
+    longitude: 79.0655,
+    connector_type: "CCS2",
+    power_kw: 22.0,
+    price_per_kwh: 18.0,
+    currency: "INR",
+    availability_status: "available",
+    host_rating: 4.7,
+    rating_count: 31,
+    distance_km: 4.6,
+    area_description: "Near Airport T-Point, Wardha Road, Nagpur",
+    amenities: ["Rapid Fast Charger", "Cafeteria Waiting Room"],
+    access_instructions: "Dedicated charging bay #2 with automated card reader.",
+    verification_level: 4
+  }
+];
